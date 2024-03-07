@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "root";
 $password = "nghia3092003";
 $dbname = "loginbaomatweb";

@@ -62,5 +62,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p class="loginNav">Bạn chưa có tài khoản? <a style="color: blue;" href="register.php">Đăng ký ngay</a></p>
         </form>
     </div>
+
+    <script>
+    document.getElementById("Form").addEventListener("submit", function(event) {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === ""|| password === "") {
+            alert("Vui lòng nhập đầy đủ thông tin");
+            event.preventDefault();
+        }
+    });
+    </script>
 </body>
 </html>
